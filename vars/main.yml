@@ -1,10 +1,13 @@
 ---
 # vars file for netzwirt.http-haproxy
-
+## haproxy_home change if you need 
 haproxy_home: "/var/lib/haproxy"
+
+# User for your service should be a system user 
 haproxy_user: "haproxy"
 
 # default backend options
+# add option to your needs 
 haproxy_default_backend_options:
 - balance: leastconn
 - option: httpclose
